@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logInFragment">
+
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.chargeapp.fragments.login.LogInFragment"
+        android:label="Authorization"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_chargesListFragment"
+            app:destination="@id/chargesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.chargeapp.fragments.registration.RegistrationFragment"
+        android:label="Registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/chargesListFragment"
+        android:name="com.example.chargeapp.fragments.list.ChargesListFragment"
+        android:label="Charges"
+        tools:layout="@layout/fragment_charges_list" >
+        <action
+            android:id="@+id/action_chargesListFragment_to_addChargeFragment"
+            app:destination="@id/addChargeFragment" />
+        <action
+            android:id="@+id/action_chargesListFragment_to_updateChargeFragment"
+            app:destination="@id/updateChargeFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.chargeapp.model.User" />
+        <action
+            android:id="@+id/action_chargesListFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addChargeFragment"
+        android:name="com.example.chargeapp.fragments.add.AddChargeFragment"
+        android:label="Add Charge"
+        tools:layout="@layout/fragment_add_charge" >
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateChargeFragment"
+        android:name="com.example.chargeapp.fragments.update.UpdateChargeFragment"
+        android:label="Edit Charge"
+        tools:layout="@layout/fragment_update_charge" >
+        <argument
+            android:name="editCharge"
+            app:argType="com.example.chargeapp.model.Charge" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.chargeapp.fragments.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="user"
+            app:argType="com.example.chargeapp.model.User" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.chargeapp.fragments.update.UpdateProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_update_profile">
+        <argument
+            android:name="user"
+            app:argType="com.example.chargeapp.model.User" />
+    </fragment>
+</navigation>

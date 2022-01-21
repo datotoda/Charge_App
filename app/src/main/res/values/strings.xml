@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Charge App</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="add">Create</string>
+    <string name="title">Title</string>
+    <string name="cost">Cost</string>
+    <string name="description">Description</string>
+    <string name="successfully_save">Successfully Saved!</string>
+    <string name="delete_charge_alert_title">Delete Charge</string>
+    <string name="delete_charge_alert_message">Are you sure that you want to delete the charge?</string>
+    <string name="delete_all_charges_alert_title">Delete All Charges</string>
+    <string name="delete_all_charges_alert_message">Are you sure that you want to delete all charges?</string>
+    <string name="successfully_removed_everything">Successfully Removed Everything</string>
+    <string name="successfully_removed_charge">Successfully Removed Charge</string>
+    <string name="invalid_fields">Please Fill Out All Fields</string>
+    <string name="list_is_empty">Charges List Is Empty!</string>
+    <string name="invalid_login_fields">Input Correct Email And Password!</string>
+    <string name="registration_successfully">Registration Completed Successfully!</string>
+    <string name="default_name">admin</string>
+    <string name="default_last_name">admin</string>
+    <string name="default_email">admin@admin.com</string>
+    <string name="default_password">admin</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="blank_string" />
+    <string name="profile">Profile</string>
+</resources>
